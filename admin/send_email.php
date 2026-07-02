@@ -14,13 +14,13 @@ function sendNotification($recipient_email, $subject, $message_body) {
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'emzomatewere@gmail.com'; // your Gmail
-        $mail->Password = 'zkpi hcgp wfjo mobh';    // your App password
+        $mail->Username = ''; // your Gmail
+        $mail->Password = '';    // your App password
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
         // Recipients
-        $mail->setFrom('emzomatewere@gmail.com', 'Law Office System');
+        $mail->setFrom('', 'Law Office System'); // add your email here
         $mail->addAddress($recipient_email);
 
         // Content
